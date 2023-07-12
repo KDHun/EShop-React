@@ -1,0 +1,37 @@
+.CustomerList {
+  overflow: scroll;
+  max-height: 85vh;
+  margin: 1%;
+  padding: 1%;
+}
+.CustomerList::-webkit-scrollbar {
+  display: none;
+}
+.CustomerList {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.CustomerListTable {
+  width: 100%;
+  text-align: left;
+  border: 10px solid rgb(0, 0, 0);
+}
+.CustomerListTableHeader th {
+  background-color: rgb(252, 234, 210);
+  padding: 10px;
+}
+.AddCustomer {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.AddCustomerDiv {
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid;
+  border-radius: 10px;
+  max-width: fit-content;
+}
+.AddCustomerDiv:hover {
+  font-size: x-large;
+}

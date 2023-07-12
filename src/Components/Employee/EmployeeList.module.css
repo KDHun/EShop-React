@@ -1,0 +1,38 @@
+.EmployeeList {
+  overflow: scroll;
+  max-height: 85vh;
+  margin: 1%;
+  padding: 1%;
+}
+.EmployeeList::-webkit-scrollbar {
+  display: none;
+}
+.EmployeeList {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.EmployeeListTable{
+    width: 100%;
+    text-align: left;
+    border:10px solid rgb(0, 0, 0);
+    
+}
+.EmployeeListTableHeader th{
+    background-color: rgb(252, 234, 210);
+    padding: 10px;
+}
+.AddEmployee{
+  text-decoration: none;
+  color:black;
+  font-weight: 700;
+}
+.AddEmployeeDiv{
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid;
+  border-radius: 10px;
+  max-width: fit-content;
+}
+.AddEmployeeDiv:hover{
+ font-size:x-large;
+}

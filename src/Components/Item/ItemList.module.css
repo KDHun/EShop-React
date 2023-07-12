@@ -1,0 +1,39 @@
+.ItemList {
+  overflow: scroll;
+  max-height: 85vh;
+  margin: 1%;
+  padding: 1%;
+}
+.ItemList::-webkit-scrollbar {
+  display: none;
+}
+.ItemList {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.ItemListTable{
+    width: 100%;
+    text-align: left;
+    border:10px solid rgb(0, 0, 0);
+    
+}
+.ItemListTableHeader th{
+    background-color: rgb(252, 234, 210);
+    padding: 10px;
+}
+
+.AddItem{
+  text-decoration: none;
+  color:black;
+  font-weight: 700;
+}
+.AddItemDiv{
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid;
+  border-radius: 10px;
+  max-width: fit-content;
+}
+.AddItemDiv:hover{
+ font-size:x-large;
+}

@@ -1,0 +1,9 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding: 2%;
+    margin: auto;
+    margin-top: 10%;
+}

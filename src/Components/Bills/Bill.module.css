@@ -1,0 +1,32 @@
+.BillRow td {
+  padding: 1%;
+}
+.DeleteBtn {
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  color:red;
+  border-color: red;
+}
+.DeleteBtn:hover{
+    border: 4px solid rgb(255, 110, 110);
+    background-color: red;
+    color:white;
+    font-weight: 700;
+}
+
+.ItemBtn{
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  color:rgb(79, 110, 223);
+  border-color: rgb(0, 253, 4);
+}
+.ItemBtn:hover{
+  border: 2px solid rgb(213, 255, 225);
+  background-color: rgb(76, 169, 113);
+  color:white;
+  font-weight: 700;
+}

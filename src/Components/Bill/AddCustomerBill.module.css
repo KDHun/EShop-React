@@ -1,0 +1,20 @@
+.AddCustomerLink{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: white;
+    min-width: 100px;
+    padding: 5px;
+
+}
+.AddCustomerBillDiv{
+    padding: 10px;
+}
+.CustomersDiv{
+    background-color: rgba(232, 238, 183, 0.651);
+    margin: 5px;
+    padding: 10px;
+    
+}

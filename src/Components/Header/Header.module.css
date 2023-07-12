@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  justify-content: left;
+  gap: 5%;
+  background-image: url("../../Image/HeaderBackground.png");
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: rgb(169, 161, 161);
+  min-width: fit-content;
+  margin-top: 10%;
+}
+
+
+.navLinks {
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: left;
+  gap: 20%;
+}
+
+
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  margin-top: 10%;
+
+}
+
+.btn{
+  border:none;
+  border-radius:5px;
+  font-size:18px;
+  color: white;
+  background: transparent;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background:transparent;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  color:#ddd;
+  background-color:#1d1b1b;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  z-index: 500;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+  color: white;
+}
+
+.dropdown-options .dropdownLink {
+  display: block;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown-options .dropdownLink:hover {
+  color: #fbfbfb;
+  background-color: #212121;
+  border-radius:5px;
+}

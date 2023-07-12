@@ -1,0 +1,17 @@
+.innerCard {
+  max-width: 34%;
+  min-width: 30%;
+  max-width: fit-content;
+  overflow: scroll;
+  max-height: 75vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.innerCard::-webkit-scrollbar {
+  display: none;
+}
+.outerCard {
+  display: flex;
+  margin: 5px;
+}
+
