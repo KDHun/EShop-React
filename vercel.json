@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" },
-    { "source": "/eshop-react/(.*)", "destination": "/static/*" }
+    { "source": "/eshop-react/static/(.*)", "destination": "/static/*" },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
