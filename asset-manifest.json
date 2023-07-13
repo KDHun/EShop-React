@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/eshop-react/static/css/main.b8612bca.css",
+    "main.js": "/eshop-react/static/js/main.87439c5a.js",
+    "static/media/ContactUS-bg.jpg": "/eshop-react/static/media/ContactUS-bg.034173fe4ab15b439aba.jpg",
+    "static/media/EShopLogo.png": "/eshop-react/static/media/EShopLogo.33d4b62b34b2af2b3b5f.png",
+    "static/media/CallLogo.png": "/eshop-react/static/media/CallLogo.a20c89534857c07b12c0.png",
+    "static/media/HeaderBackground.png": "/eshop-react/static/media/HeaderBackground.b349fd3fcbfd2236aa65.png",
+    "static/media/EmailLogo.png": "/eshop-react/static/media/EmailLogo.cbdaad521d127e9b4184.png",
+    "index.html": "/eshop-react/index.html",
+    "main.b8612bca.css.map": "/eshop-react/static/css/main.b8612bca.css.map",
+    "main.87439c5a.js.map": "/eshop-react/static/js/main.87439c5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8612bca.css",
+    "static/js/main.87439c5a.js"
+  ]
+}
