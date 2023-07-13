@@ -17,7 +17,7 @@ const Login = () => {
     event.preventDefault();
     console.log(emailValue.current.value);
     console.log(passwordValue.current.value);
-    axios.post("http://localhost:3001/login", {
+    axios.post(`${process.env.REACT_APP_API_URL}/login`, {
         Email: emailValue.current.value,
         Password: passwordValue.current.value,
       })

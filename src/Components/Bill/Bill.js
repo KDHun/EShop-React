@@ -21,7 +21,7 @@ const Bill = () => {
 
   React.useEffect(() => {
     axios
-      .get("http://localhost:3001/Item", {
+      .get(`${process.env.REACT_APP_API_URL}/Item`, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")
@@ -42,7 +42,7 @@ const Bill = () => {
     updatedItems.forEach((element) => {element.data.Quanity=+element.data.Quanity*-1 + +itemList.find((ele) => ele._id === element._id).Quanity});
 
     axios
-      .patch("http://localhost:3001/Items", updatedItems, {
+      .patch(`${process.env.REACT_APP_API_URL}/Items`, updatedItems, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")
@@ -56,8 +56,7 @@ const Bill = () => {
         console.log(error);
       });
     axios
-      .post(
-        "http://localhost:3001/Bill",
+      .post(`${process.env.REACT_APP_API_URL}/Bill`,
         {
           CustomerId: customer._id,
           CustomerName:

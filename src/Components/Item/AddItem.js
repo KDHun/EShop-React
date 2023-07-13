@@ -33,7 +33,7 @@ const AddItem = () => {
 
     event.preventDefault();
     axios
-      .post("http://localhost:3001/Item",{
+      .post(`${process.env.REACT_APP_API_URL}/Item`,{
         Name: nameValue,
         Price: priceValue,
         Discount: discountValue,

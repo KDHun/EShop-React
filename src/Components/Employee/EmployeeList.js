@@ -9,7 +9,7 @@ const EmployeeList = (props) => {
     const auth = useSelector((state) => state.auth);
     console.log(auth);
     useEffect(() => {
-        axios.get("http://localhost:3001/Employee",{headers:{authorization: `Barear ${auth.Token?auth.Token:localStorage.getItem("Token")}`}}).then((response) => {
+        axios.get(`${process.env.REACT_APP_API_URL}/Employee`,{headers:{authorization: `Barear ${auth.Token?auth.Token:localStorage.getItem("Token")}`}}).then((response) => {
             setEmployees(response.data);
         }).catch((err)=>{
         console.log(err);
@@ -18,7 +18,7 @@ const EmployeeList = (props) => {
     console.log(employees);
     const deleteEmployeeHandler = (EmployeeId) => {
         axios
-          .delete(`http://localhost:3001/Employee/${EmployeeId}`,{headers:{authorization: `Barear ${auth.Token?auth.Token:localStorage.getItem("Token")}`}})
+          .delete(`${process.env.REACT_APP_API_URL}/Employee/${EmployeeId}`,{headers:{authorization: `Barear ${auth.Token?auth.Token:localStorage.getItem("Token")}`}})
           .then((res) => {
             console.log(res);
             setEmployees(employees.filter((Employee) => Employee._id !== EmployeeId));

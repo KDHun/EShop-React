@@ -11,7 +11,7 @@ const ItemList = (props) => {
   console.log(auth);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/Item", {
+      .get(`${process.env.REACT_APP_API_URL}/Item`, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")
@@ -28,7 +28,7 @@ const ItemList = (props) => {
   console.log(items);
   const deleteItemHandler = (ItemId) => {
     axios
-      .delete(`http://localhost:3001/Item/${ItemId}`, {
+      .delete(`${process.env.REACT_APP_API_URL}/Item/${ItemId}`, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")

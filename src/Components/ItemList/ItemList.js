@@ -10,7 +10,7 @@ const ItemList = () => {
   const auth = useSelector((state) => state.auth);
 
   React.useEffect(() => {
-    axios.get("http://localhost:3001/Item",{headers:{authorization: `Barear ${auth.Token?auth.Token:localStorage.getItem("Token")}`}}).then((response) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/Item`,{headers:{authorization: `Barear ${auth.Token?auth.Token:localStorage.getItem("Token")}`}}).then((response) => {
       setData(response.data);
     }).catch((err)=>{
       console.log(err);

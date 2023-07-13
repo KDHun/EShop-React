@@ -10,7 +10,7 @@ const AddCustomerBill = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/Customer", {
+      .get(`${process.env.REACT_APP_API_URL}/Customer`, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")

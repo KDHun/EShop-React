@@ -38,7 +38,7 @@ const AddCustomer = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:3001/Customer", {
+      .post(`${process.env.REACT_APP_API_URL}/Customer`, {
         FirstName: firstNameValue,
         MiddleName: middleNameValue,
         LastName: lastNameValue,

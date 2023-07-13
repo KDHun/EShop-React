@@ -11,7 +11,7 @@ const CustomerList = (props) => {
   console.log(auth);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/Customer", {
+      .get(`${process.env.REACT_APP_API_URL}/Customer`, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")
@@ -28,7 +28,7 @@ const CustomerList = (props) => {
   console.log(customers);
   const deleteCustomerHandler = (CustomerId) => {
     axios
-      .delete(`http://localhost:3001/Customer/${CustomerId}`, {
+      .delete(`${process.env.REACT_APP_API_URL}/Customer/${CustomerId}`, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")

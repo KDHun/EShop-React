@@ -45,8 +45,7 @@ const AddEmployee = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     axios
-      .post(
-        "http://localhost:3001/Employee",
+      .post(`${process.env.REACT_APP_API_URL}/Employee`,
         {
           FirstName: firstNameValue,
           MiddleName: middleNameValue,

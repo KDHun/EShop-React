@@ -41,7 +41,7 @@ const SignUp = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:3001/register", {
+      .post(`${process.env.REACT_APP_API_URL}/register`, {
         FirstName: firstNameValue,
         MiddleName: middleNameValue,
         LastName: lastNameValue,

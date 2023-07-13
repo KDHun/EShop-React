@@ -16,7 +16,7 @@ const BillList = (props) => {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:3001/Bill", {
+      .get(`${process.env.REACT_APP_API_URL}/Bill`, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")
@@ -33,7 +33,7 @@ const BillList = (props) => {
 
   const deleteBillHandler = (BillId) => {
     axios
-      .delete(`http://localhost:3001/Bill/${BillId}`, {
+      .delete(`${process.env.REACT_APP_API_URL}/Bill/${BillId}`, {
         headers: {
           authorization: `Barear ${
             auth.Token ? auth.Token : localStorage.getItem("Token")
